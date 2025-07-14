@@ -460,6 +460,13 @@ def main():
             with col_btn3:
                 if st.button("🔄 Clear Form"):
                     st.rerun()
+
+        st.download_button(
+            label="⬇️ Backup (JSON)",
+            data=json.dumps(st.session_state.cost_data, ensure_ascii=False, indent=2),
+            file_name="product_costs_backup.json",
+            mime="application/json"
+        )
         
         with col2:
             st.subheader("Quick Stats")
