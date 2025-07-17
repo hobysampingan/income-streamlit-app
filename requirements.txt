@@ -1,6 +1,19 @@
-streamlit
-pandas
-openpyxl
-xlsxwriter
-matplotlib
-numpy
+# Core
+streamlit==1.37.0
+pandas==2.2.2
+numpy==1.26.4
+
+# Excel I/O
+openpyxl==3.1.5
+xlsxwriter==3.2.0
+
+# Visualization
+matplotlib==3.9.1
+seaborn==0.13.2
+plotly==5.22.0
+
+# Utilities
+python-dateutil==2.9.0
+
+# Optional – only if you want to extend AI features later
+# openai==1.35.13
